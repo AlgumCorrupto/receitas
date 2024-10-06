@@ -718,8 +718,8 @@ header h1{
   width: 6rem;
   --tw-bg-opacity: 1;
   background-color: rgb(37 34 37 / var(--tw-bg-opacity));
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .receita-span{
