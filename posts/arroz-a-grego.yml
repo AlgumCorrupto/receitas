@@ -5,13 +5,13 @@ porcao: 10 porções
 descricao: O Arroz que leva queijo, melhor servido na hora ou comido quente.
 ingredientes:
   - nome: Arroz
-    quantidade: 3 punhados
+    quantidade: 3 xícaras
     imagem: /ingredientes/arroz.jpg
   - nome: Óleo
     quantidade: 2 colheres
     imagem: /ingredientes/oleo.jpg
   - nome: Sal
-    quantidade: 1.5 colher
+    quantidade: A gosto
     imagem: /ingredientes/sal.jpg
   - nome: Requeijão Cremoso
     quantidade: 1 copo
@@ -22,11 +22,11 @@ ingredientes:
   - nome: Mussarela
     quantidade: 5/6 fatias
     imagem: /ingredientes/mussarela.jpg
-  - nome: vegetais mistos (ervilha, milho, cenoura)
+  - nome: Vegetais mistos (ervilha, milho, cenoura)
     quantidade: 1 latinha
     imagem: /ingredientes/vegetais-mistos.jpg
   - nome: Pimentão (qualquer cor)
-    quantidade: 1/2 unidade
+    quantidade: 1/2 unidades
     imagem: /ingredientes/pimentao.jpg
   - nome: Creme de Leite
     quantidade: 2 caixinhas
