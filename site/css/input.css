@@ -1,0 +1,251 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'protest';
+  src: url('../fonts/protest.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'fira';
+  src: url('../fonts/fira.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@layer base {
+  :root {
+    --color-primary: #773440;
+    --color-secondary: #DEC2A1;
+  }
+}
+
+body {
+  font-family: 'fira', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  @apply bg-base1 m-0;
+  @apply block;
+}
+
+.nav-outer {
+  @apply shadow-lg;
+  @apply top-0 sticky z-50;
+  @apply w-full flex justify-center;
+}
+
+.nav-outer nav {
+  @apply text-current bg-base3 flex;
+  @apply w-full;
+  /*@apply rounded-md overflow-hidden;*/
+}
+
+.nav-outer nav a {
+  @apply h-full px-2 py-1
+}
+
+.nav-outer nav a:hover {
+  @apply text-base1 bg-primary
+}
+
+header .title {
+  @apply bg-current;
+  @apply text-base2;
+  @apply text-center;
+  /*@apply mb-2;*/
+  @apply py-2;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'protest', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+header h1 {
+  @apply text-center text-6xl;
+}
+
+.tagmenu {
+  @apply mt-4;
+  @apply grid grid-cols-3 gap-2 mx-4 mb-4
+}
+
+.tagmenu a {
+  @apply shadow-lg;
+  @apply py-2 bg-current text-base1 px-2 rounded-md;
+}
+
+.tagmenu a:hover {
+  /*@apply brightness-200;*/
+  @apply bg-primary;
+}
+
+.tagmenu a:active {
+  /*@apply brightness-200;*/
+  @apply brightness-150;
+}
+
+.tagsection {
+  @apply block;
+  @apply mx-4 -my-2;
+}
+
+.tagsection h2 {
+  @apply -mb-3;
+  @apply text-3xl
+}
+
+.receita-span img {
+  @apply cursor-pointer;
+  @apply object-contain w-24 h-24 bg-base2
+}
+
+.receita-span {
+  @apply flex align-middle gap-x-3 my-4;
+  @apply shadow-md;
+  @apply bg-base2 overflow-hidden rounded-md;
+}
+
+.receita-span div {
+  @apply block;
+  @apply relative;
+}
+.receita-span a {
+  @apply bottom-1 absolute;
+  @apply bg-current text-base1 px-2 py-1 rounded-md;
+  @apply w-max
+}
+
+.receita-span a:hover {
+  @apply bg-primary;
+}
+
+.receita-span a:active {
+  @apply brightness-150;
+}
+
+.receita-span h3 {
+  @apply text-2xl -mb-2 cursor-pointer
+}
+
+
+.receita-titulo div {
+  @apply w-full;
+}
+.receita-titulo div img {
+  @apply object-contain;
+  @apply w-full h-64;
+}
+
+.receita-titulo {
+  /*@apply bg-gradient-to-tl from-secondary to-primary text-white*/
+  @apply bg-base2 text-current rounded-b-xl overflow-hidden shadow-md;
+}
+
+.receita-titulo h1 {
+  @apply mt-2;
+  @apply mx-4;
+  @apply text-4xl;
+}
+
+.receita-titulo p {
+  @apply mx-4 pb-2;
+}
+
+.receita-titulo .tempo {
+  @apply -mt-2 pl-4;
+  @apply inline-block;
+  @apply bg-primary text-base1;
+}
+
+.receita-subtitulo {
+  @apply px-4 ml-2 mb-2 rounded-md;
+  @apply mt-4;
+  @apply text-2xl text-center;
+}
+
+.ingredientes table {
+  @apply rounded-md overflow-hidden;
+  @apply shadow-md;
+}
+.ingredientes table th[scope=col] {
+  @apply bg-current text-base1 border-base1 text-xl;
+  @apply px-4 py-2;
+  /*@apply bg-base1 text-current border-x border-current;*/
+}
+
+.ingredientes {
+  @apply flex justify-center;
+}
+
+.ingredientes table tr {
+  @apply bg-base1;
+}
+
+.ingredientes table img {
+  @apply object-contain w-10 h-10;
+}
+
+.ingredientes table tr:nth-child(odd) {
+  @apply bg-base2;
+}
+
+.preparo {
+  @apply block;
+}
+
+ol {
+  @apply mx-4;
+}
+
+li {
+  counter-increment: item;
+  @apply pb-3 pt-2 drop-shadow-lg;
+  @apply border-b border-base3;
+}
+li:before {
+  margin-right: 10px;
+  content: counter(item);
+  @apply bg-primary size-7 text-center inline-block rounded-full text-xl text-base1;
+  @apply shadow-lg;
+  font-family: 'protest' 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+li img {
+  @apply ml-10 mt-2;
+  @apply object-contain w-3/4 h-56;
+}
+
+.volte-depois {
+  @apply text-center mt-2;
+}
+
+.volt-topo {
+  @apply inline-block w-full text-center;
+  @apply bg-current text-base1 py-2;
+}
+.volt-topo:hover {
+  @apply bg-secondary text-white;
+}
+.volt-topo:active {
+  @apply brightness-110;
+}
+
+.home-volt-topo {
+  @apply flex justify-center;
+}
+
+.home-volt-topo a {
+  @apply rounded-xl bg-current text-base1 shadow-md;
+  @apply py-2 px-2;
+}
+.home-volt-topo a:hover {
+  @apply cursor-pointer;
+  @apply bg-secondary text-white;
+}
+.home-volt-topo a:active {
+  @apply brightness-110;
+}

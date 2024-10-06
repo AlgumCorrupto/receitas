@@ -1,0 +1,35 @@
+<section class="home">
+    <!--
+    <section class="destaques">
+        {{#destaques}}
+        <div>
+            <img src="{{banner}}">
+            <small>{{tags}}</small>
+            <h3>{{title}}</h3>
+        </div>
+        {{/destaques}}
+    </section>
+    -->
+    <div class="tagmenu">
+        {{#tags}}
+        <a href="#{{nome}}">{{nome}}</a>
+        {{/tags}}
+    </div>
+    {{#tags}}
+    <section class="tagsection" id="{{nome}}">
+        <h2>{{nome}}</h2>
+        {{#receitas}}
+        <span class="receita-span">
+            <img src="{{banner}}" onclick="window.location.href='./receitas{{{filename}}}.html'">
+            <div><h3 onclick="window.location.href='./receitas{{{filename}}}.html'">{{titulo}}</h3>
+            <small>{{tags}}</small><br>
+            <a href="./receitas{{{filename}}}.html">Ver receita ⏶</a></div>
+        </span>
+        {{/receitas}}
+        <div class="home-volt-topo">
+            <a class="#topo">Topo</a>
+        </div>
+    </section>
+    {{/tags}}
+    <p class="volte-depois">Volte sempre, no futuro traremos mais receitas :)</p>
+</section>

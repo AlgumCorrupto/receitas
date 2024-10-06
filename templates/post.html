@@ -1,0 +1,44 @@
+<article>
+    <section class="receita-titulo">
+        <div style="background-image: url({{banner}});">
+            <img src="{{{banner}}}" style="backdrop-filter: blur(8px)"> </img>
+        </div>
+        <div class="tempo">Tempo de preparo: ⏱ {{tempo}}</div>
+        <h1>{{titulo}}</h1>
+        <p>{{descricao}}</p>
+    </section>
+
+    <h2 class="receita-subtitulo">Ingredientes</h2>
+
+    <section class="ingredientes" id="ingredientes">
+        <table>
+            <!--<caption>Lista de ingredientes</caption>!-->
+            <thead><tr>
+                <th scope="col">Ingrediente</th>
+                <th scope="col">Quantidade</th>
+                <th scope="col">Imagem</th>
+            </tr></thead>
+            <tbody>
+                {{#ingredientes}}<tr>
+                <th scope="row">{{nome}}</th>
+                <td>{{quantidade}}</td>
+                <td><img  src="{{imagem}}"></img></td>
+                </tr>{{/ingredientes}}
+            </tbody>
+        </table>
+    </section>
+
+    <h2 class="receita-subtitulo">Modo de preparo</h2>
+    <section class="preparo" id="preparo">
+        <ol>
+            {{#preparo}}
+            <li>{{passo}}
+                {{#imagem}}
+                <img src="{{imagem}}"></img>
+                {{/imagem}}
+            </li>
+            {{/preparo}}
+        </ol>
+    </section>
+    <a href="#topo" class="volt-topo">Voltar ao Topo</a>
+</article>
