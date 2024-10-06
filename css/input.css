@@ -106,7 +106,7 @@ header h1 {
 
 .receita-span img {
   @apply cursor-pointer;
-  @apply object-contain w-24 h-24 bg-base2
+  @apply object-contain w-24 h-24 bg-current;
 }
 
 .receita-span {

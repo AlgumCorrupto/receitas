@@ -1,0 +1,44 @@
+banner: /banners/arroz-a-grega.jpg
+titulo: Arroz à grega
+tempo: 1 Hora
+porcao: 10 porções
+descricao: O Arroz que leva queijo, melhor servido na hora ou comido quente.
+ingredientes:
+  - nome: Arroz
+    quantidade: 3 punhados
+    imagem: /ingredientes/arroz.jpg
+  - nome: Óleo
+    quantidade: 2 colheres
+    imagem: /ingredientes/oleo.jpg
+  - nome: Sal
+    quantidade: 1.5 colher
+    imagem: /ingredientes/sal.jpg
+  - nome: Requeijão Cremoso
+    quantidade: 1 copo
+    imagem: /ingredientes/requeijao.jpg
+  - nome: Parmesão ralado
+    quantidade: 25g
+    imagem: /ingredientes/parmesao.jpg
+  - nome: Mussarela
+    quantidade: 5/6 fatias
+    imagem: /ingredientes/mussarela.jpg
+  - nome: vegetais mistos (ervilha, milho, cenoura)
+    quantidade: 1 latinha
+    imagem: /ingredientes/vegetais-mistos.jpg
+  - nome: Pimentão (qualquer cor)
+    quantidade: 1/2 unidade
+    imagem: /ingredientes/pimentao.jpg
+  - nome: Creme de Leite
+    quantidade: 2 caixinhas
+    imagem: /ingredientes/creme-de-leite.jpg
+preparo:
+  - passo: Cozinhe o arroz da forma que você preferir
+  - passo: Misture o requeijão com os vegetais mistos e o pimentão
+  - passo: Logo em seguida misture com o arroz já cozido com o molho.
+  - passo: Forre o prato com mussarela e o parmesão,
+  - passo: Coloque prato no forno em fogo alto até o queijo derreter.
+tags:
+  - Arroz
+  - Queijo
+  - Almoço
+  - Janta
