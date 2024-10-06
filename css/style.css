@@ -591,6 +591,9 @@ body {
   --tw-bg-opacity: 1;
   background-color: rgb(235 221 216 / var(--tw-bg-opacity));
   display: block;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 
 .nav-outer{
@@ -840,6 +843,9 @@ header h1{
   --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  -webkit-user-select: text;
+     -moz-user-select: text;
+          user-select: text;
 }
 
 .ingredientes table th[scope=col]{
@@ -895,6 +901,9 @@ li {
   padding-top: 0.5rem;
   --tw-drop-shadow: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+  -webkit-user-select: text;
+     -moz-user-select: text;
+          user-select: text;
   border-bottom-width: 1px;
   --tw-border-opacity: 1;
   border-color: rgb(215 200 195 / var(--tw-border-opacity));
@@ -979,6 +988,11 @@ li img{
   padding-bottom: 0.5rem;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+  -webkit-user-select: none;
+  /* Safari */
+  /* IE 10 and IE 11 */
+  -moz-user-select: none;
+       user-select: none;
 }
 
 .home-volt-topo a:hover{

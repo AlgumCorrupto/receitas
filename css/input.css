@@ -30,7 +30,7 @@
 body {
   font-family: 'fira', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   @apply bg-base1 m-0;
-  @apply block;
+  @apply block select-none;
 }
 
 .nav-outer {
@@ -176,6 +176,7 @@ header h1 {
 .ingredientes table {
   @apply rounded-md overflow-hidden;
   @apply shadow-md;
+  @apply select-text
 }
 .ingredientes table th[scope=col] {
   @apply bg-current text-base1 border-base1 text-xl;
@@ -210,6 +211,7 @@ ol {
 li {
   counter-increment: item;
   @apply pb-3 pt-2 drop-shadow-lg pl-4; 
+  @apply select-text;
   @apply border-b border-base3;
   @apply relative pl-11;
 }
@@ -246,7 +248,10 @@ li img {
 
 .home-volt-topo a {
   @apply rounded-xl bg-current text-base1 shadow-md;
-  @apply py-2 px-2;
+  @apply py-2 px-2 select-none;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none;
 }
 .home-volt-topo a:hover {
   @apply cursor-pointer;
