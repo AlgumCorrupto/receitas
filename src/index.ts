@@ -2,7 +2,7 @@ import * as utils from './utils';
 
 let postPath =  './posts';
 let templatePath = './templates';
-let outPath  =  './site';
+let outPath  =  './docs';
 let imagePath = './imagens';
 
 utils.copyFolder('./css', outPath);

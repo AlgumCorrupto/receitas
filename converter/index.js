@@ -26,7 +26,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var utils = __importStar(require("./utils"));
 var postPath = './posts';
 var templatePath = './templates';
-var outPath = './site';
+var outPath = './docs';
 var imagePath = './imagens';
 utils.copyFolder('./css', outPath);
 utils.copyFolder('./imagens', outPath);
