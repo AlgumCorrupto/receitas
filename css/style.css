@@ -861,6 +861,9 @@ header h1{
   padding-right: 1rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
   /*@apply bg-base1 text-current border-x border-current;*/
 }
 

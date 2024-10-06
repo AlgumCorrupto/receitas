@@ -178,12 +178,14 @@ header h1 {
   @apply shadow-md;
   @apply select-text
 }
+
 .ingredientes table th[scope=col] {
   @apply bg-current text-base1 border-base1 text-xl;
   @apply px-4 py-2;
   @apply select-none;
   /*@apply bg-base1 text-current border-x border-current;*/
 }
+
 
 .ingredientes {
   @apply flex justify-center;
