@@ -53,8 +53,13 @@ body {
   @apply text-base1 bg-primary
 }
 
+.nav-outer nav a:active {
+  @apply brightness-150;
+}
+
 header .title {
   @apply bg-current;
+  @apply px-4;
   @apply text-base2;
   @apply text-center;
   /*@apply mb-2;*/
