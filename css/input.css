@@ -80,7 +80,7 @@ header h1 {
 }
 
 .tagmenu a {
-  @apply shadow-lg;
+  @apply shadow-xl;
   @apply py-2 bg-current text-base1 px-2 rounded-md;
 }
 
@@ -106,22 +106,28 @@ header h1 {
 
 .receita-span img {
   @apply cursor-pointer;
-  @apply object-cover w-24 h-24 bg-current;
+  @apply object-cover w-24 bg-current;
 }
 
 .receita-span {
   @apply flex align-middle gap-x-3 my-4;
+  @apply min-h-24;
   @apply shadow-md;
   @apply bg-base2 overflow-hidden rounded-md;
 }
 
-.receita-span div {
-  @apply block;
+.ver-receita {
+  @apply flex align-bottom;
+  @apply h-12;
   @apply relative;
 }
+
+.receita-span div {
+  @apply block;
+}
 .receita-span a {
-  @apply bottom-1 absolute;
-  @apply bg-current text-base1 px-2 py-1 rounded-md;
+  @apply absolute bottom-2;
+  @apply bg-primary text-base1 px-2 py-1 rounded-md shadow-md;
   @apply w-max
 }
 
@@ -134,7 +140,7 @@ header h1 {
 }
 
 .receita-span h3 {
-  @apply text-2xl -mb-2 cursor-pointer
+  @apply text-2xl pt-1 -mb-2 cursor-pointer
 }
 
 
@@ -247,11 +253,12 @@ li img {
 }
 
 .home-volt-topo {
-  @apply flex justify-center;
+  @apply flex justify-center -mt-1;
 }
 
 .home-volt-topo a {
   @apply rounded-xl bg-current text-base1 shadow-md;
+  @apply shadow-md;
   @apply py-2 px-2 select-none;
   -webkit-user-select: none; /* Safari */
   -ms-user-select: none; /* IE 10 and IE 11 */
