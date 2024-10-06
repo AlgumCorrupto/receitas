@@ -204,18 +204,19 @@ ol {
 
 li {
   counter-increment: item;
-  @apply pb-3 pt-2 drop-shadow-lg;
+  @apply pb-3 pt-2 drop-shadow-lg pl-4; 
   @apply border-b border-base3;
+  @apply relative pl-11;
 }
 li:before {
-  margin-right: 10px;
   content: counter(item);
-  @apply bg-primary size-7 text-center inline-block rounded-full text-xl text-base1;
+  @apply absolute -left-0;
+  @apply bg-primary mb-auto text-base1 size-7 text-center inline-block rounded-full text-xl;
   @apply shadow-lg;
   font-family: 'protest' 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 li img {
-  @apply ml-10 mt-2;
+  @apply mt-2;
   @apply object-contain w-3/4 h-56;
 }
 

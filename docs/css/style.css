@@ -891,11 +891,15 @@ li {
   border-bottom-width: 1px;
   --tw-border-opacity: 1;
   border-color: rgb(215 200 195 / var(--tw-border-opacity));
+  position: relative;
+  padding-left: 2.75rem;
 }
 
 li:before {
-  margin-right: 10px;
   content: counter(item);
+  position: absolute;
+  left: -0px;
+  margin-bottom: auto;
   display: inline-block;
   width: 1.75rem;
   height: 1.75rem;
@@ -914,7 +918,6 @@ li:before {
 }
 
 li img{
-  margin-left: 2.5rem;
   margin-top: 0.5rem;
   height: 14rem;
   width: 75%;
