@@ -846,6 +846,8 @@ header h1{
   -webkit-user-select: text;
      -moz-user-select: text;
           user-select: text;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .ingredientes table th[scope=col]{

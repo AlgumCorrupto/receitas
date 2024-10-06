@@ -176,7 +176,8 @@ header h1 {
 .ingredientes table {
   @apply rounded-md overflow-hidden;
   @apply shadow-md;
-  @apply select-text
+  @apply select-text;
+  @apply mx-4;
 }
 
 .ingredientes table th[scope=col] {
