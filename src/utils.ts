@@ -31,6 +31,7 @@ export interface Ingredientes {
 
 export interface Receita {
     filename: string,
+    porcao: string,
     tempo: string,
     banner: string,
     titulo: string,
