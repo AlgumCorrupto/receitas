@@ -238,7 +238,7 @@ li img {
 }
 
 .volte-depois {
-  @apply text-center mt-2;
+  @apply text-center pt-4;
 }
 
 .volt-topo {
@@ -252,22 +252,20 @@ li img {
   @apply brightness-110;
 }
 
-.home-volt-topo {
-  @apply flex justify-center -mt-1;
-}
 
-.home-volt-topo a {
-  @apply rounded-xl bg-current text-base1 shadow-md;
-  @apply shadow-md;
-  @apply py-2 px-2 select-none;
-  -webkit-user-select: none; /* Safari */
-  -ms-user-select: none; /* IE 10 and IE 11 */
-  user-select: none;
+.home-volt-topo svg {
+  @apply size-6;
 }
-.home-volt-topo a:hover {
+.home-volt-topo {
+  @apply rounded-full bg-current text-base1 shadow-md;
+  @apply shadow-md;
+  @apply p-4;
+  @apply fixed bottom-4 right-5;
+}
+.home-volt-topo:hover {
   @apply cursor-pointer;
   @apply bg-secondary text-white;
 }
-.home-volt-topo a:active {
+.home-volt-topo:active {
   @apply brightness-110;
 }
